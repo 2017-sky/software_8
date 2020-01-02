@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>price</th>
+    </tr>
+    <tr th:each="list:${list}">
+        <td th:text = "${list.id}"/></td>
+        <td th:text = "${list.name}"/></td>
+        <td th:text = "${list.age}"/></td>
+    </tr>
+</table>
+
+
+
+</body>
+</html>
